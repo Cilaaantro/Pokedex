@@ -120,7 +120,7 @@ async function storeCompressedAudioFile(cryType: string, pokemonAudioBuffer: Buf
 
 async function storeAllPokemon(storeImageFile = storePNGFile, storeAudioFile = storeUncompressedAudioFile, folderName = 'pokemon'){
   try{
-    for(let id = 922; id<=numOfPokemons; id++){
+    for(let id = 1; id<=numOfPokemons; id++){
       const pokemonJson = await fetchPokemonData(id);
       const sprites = pokemonJson.sprites
 
